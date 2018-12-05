@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "reverseInteger.cpp"
+#import "twoSum.cpp"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-      int a = reverseInteger(-214748364);
-        NSLog(@"%d",a);
-  
+        vector<int> ilist {1,2,4,5,6,7};
+        twoSum(ilist, 6);
     }
     return 0;
 }

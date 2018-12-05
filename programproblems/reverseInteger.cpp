@@ -8,7 +8,10 @@
 
 #include "reverseInteger.hpp"
 #include <math.h>
-/*  翻转越界问题待解决 */
+/*  翻转越界问题解决方案
+情况1：中间欲加值越界（欲加值=结果位*结果未倍数）
+情况2：相加最终结果越界
+ */
 int reverseInteger(int x){
     bool isRight = x > 0;
     x = fabs(x);
@@ -26,8 +29,10 @@ int reverseInteger(int x){
     for (int i= count;i>0;i--){
         int multipleBefore = pow(10, i-1);
         int multipleAfter  = pow(10, count - i);
-        int middle = x_caculte2 / multipleBefore;
         
+        
+        int middle = x_caculte2 / multipleBefore;
+  
         int indexNumber = 0;
         if (middle == 0 ) {
             if (count == 0) {
@@ -45,19 +50,34 @@ int reverseInteger(int x){
             indexNumber = middle * multipleBefore;
             x_caculte2 = x_caculte2 - indexNumber;
             if (i == needMultipleIndex) {
+                
                 number = (number + middle * multipleAfter)*10;
             }
             else{
+                //若果最大整数/位数 < 倍数，证明越界
+                if (INT_MAX/middle < multipleAfter){
+                    return 0;
+                }
                 number = number + middle * multipleAfter;
+                
             }
-            
         }
        
     }
-    if (!isRight) {
-        number = -number;
+    
+    if (number < 0){
+        return 0;
     }
-    return number;
+    else{
+        if (!isRight) {
+            number = -number;
+        }
+        
+        return number;
+    }
+    
+    
+    
 }
 
 

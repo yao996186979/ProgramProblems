@@ -27,6 +27,8 @@
 		DA86932221B62A7C00755542 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		DA98D8DA21B77C4600BFA87A /* reverseInteger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverseInteger.cpp; sourceTree = "<group>"; };
 		DA98D8DB21B77C4600BFA87A /* reverseInteger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reverseInteger.hpp; sourceTree = "<group>"; };
+		DA98D8DF21B7CD5600BFA87A /* twoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = twoSum.cpp; sourceTree = "<group>"; };
+		DA98D8E021B7CD5600BFA87A /* twoSum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = twoSum.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 				DA86932221B62A7C00755542 /* main.mm */,
 				DA98D8DB21B77C4600BFA87A /* reverseInteger.hpp */,
 				DA98D8DA21B77C4600BFA87A /* reverseInteger.cpp */,
+				DA98D8E021B7CD5600BFA87A /* twoSum.hpp */,
+				DA98D8DF21B7CD5600BFA87A /* twoSum.cpp */,
 			);
 			path = programproblems;
 			sourceTree = "<group>";
