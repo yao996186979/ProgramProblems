@@ -11,8 +11,8 @@
 #import "twoSum.cpp"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        vector<int> ilist {1,2,4,5,6,7};
-        twoSum(ilist, 6);
+        vector<int> ilist {1,2,4,3,8};
+        twoSum2(ilist, 9);
     }
     return 0;
 }
